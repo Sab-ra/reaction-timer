@@ -1,6 +1,7 @@
 <template>
   <h1>Ninja Reacton Timer</h1>
   <button @click="start">Play</button>
+  <Block v-if="isPlaying" v-bind:delay="delay" />
 </template>
 
 <script>
